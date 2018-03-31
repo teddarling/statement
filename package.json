@@ -1,0 +1,13 @@
+{
+  "name": "statement",
+  "version": "0.0.1",
+  "description": "An HTML 5 editor built for React.JS using Bootstrap and Slate.JS",
+  "main": "src/index.tsx",
+  "repository": "https://github.com/teddarling/statement",
+  "author": "Ted Darling <ted@digitalspirittech.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^9.6.1",
+    "typescript": "^2.8.1"
+  }
+}
