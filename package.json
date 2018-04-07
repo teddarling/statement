@@ -2,23 +2,41 @@
   "name": "statement",
   "version": "0.0.1",
   "description": "An HTML 5 editor built for React.JS using Bootstrap and Slate.JS",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/teddarling/statement",
   "author": "Ted Darling <ted@digitalspirittech.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/react": "^16.3.5",
+    "@types/react-dom": "^16.0.4",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
     "tslib": "^1.9.0"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.1.9",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/jest": "^22.2.2",
     "@types/node": "^9.6.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "jest": "^22.4.3",
+    "react-test-renderer": "^16.3.1",
     "shx": "^0.2.2",
+    "ts-jest": "^22.4.2",
     "tslint": "^5.9.1",
     "tslint-react": "^3.5.1",
     "typescript": "^2.8.1"
   },
   "scripts": {
     "clean": "shx rm -rf dist lib-esm",
-    "lint": "tslint --project tsconfig.json --format codeFrame"
+    "lint": "tslint --project tsconfig.json --format codeFrame",
+    "pretest": "npm run lint",
+    "test": "jest"
   }
 }
